@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "crawl4ai-exp-project-v1"
+version = "0.1.0"
+description = "Crawl4AI-based web crawler for RAG pipelines"
+authors = ["Tony Stark"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+crawl4ai = "*"
+playwright = "*"
+python-dotenv = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
