@@ -4,11 +4,19 @@ version = "0.1.0"
 description = "Crawl4AI-based web crawler for RAG pipelines"
 authors = ["Tony Stark"]
 
+packages = [
+  { include = "discover_site" },
+  { include = "smart_crawler" },
+  { include = "prompt_agent" }
+]
+
 [tool.poetry.dependencies]
 python = ">=3.12,<4.0"
 crawl4ai = "*"
 playwright = "*"
 python-dotenv = "*"
+beautifulsoup4 = "*"
+requests = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
