@@ -7,6 +7,7 @@ authors = ["Tony Stark"]
 packages = [
   { include = "discover_site" },
   { include = "smart_crawler" },
+  { include = "rag_pipeline" },
   { include = "prompt_agent" }
 ]
 
@@ -26,6 +27,9 @@ langchain-anthropic = "^0.3.13"
 langchain-groq = "^0.3.2"
 langchain-google-genai = "^2.1.4"
 mistune = "^3.1.3"
+langchain-chroma = "^0.2.4"
+unstructured = "^0.17.2"
+markdown = "^3.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"

@@ -1,12 +1,14 @@
 [tool.poetry]
-name = "crawl4ai-exp"
+name = "crawl4ai-exp-project-v1"
 version = "0.1.0"
 description = "Crawl4AI-based web crawler for RAG pipelines"
 authors = ["Tony Stark"]
+
 packages = [
-  { include = "agents" },
-  { include = "utils" },
-  { include = "langgraph" }
+  { include = "discover_site" },
+  { include = "smart_crawler" },
+  { include = "rag_pipeline" },
+  { include = "prompt_agent" }
 ]
 
 [tool.poetry.dependencies]
@@ -14,6 +16,17 @@ python = ">=3.12,<4.0"
 crawl4ai = "*"
 playwright = "*"
 python-dotenv = "*"
+beautifulsoup4 = "*"
+requests = "*"
+pydantic = "^2.11.4"
+langchain = "^0.3.25"
+langchain-community = "^0.3.24"
+langgraph = "^0.4.5"
+langchain-openai = "^0.3.17"
+langchain-anthropic = "^0.3.13"
+langchain-groq = "^0.3.2"
+langchain-google-genai = "^2.1.4"
+mistune = "^3.1.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
