@@ -8,7 +8,8 @@ packages = [
   { include = "discover_site" },
   { include = "smart_crawler" },
   { include = "rag_pipeline" },
-  { include = "prompt_agent" }
+  { include = "prompt_agent" },
+  { include = "utils" }
 ]
 
 [tool.poetry.dependencies]
